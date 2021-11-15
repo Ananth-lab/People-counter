@@ -1,15 +1,20 @@
 countEl = document.getElementById("count");
-divImage = document.getElementsByClassName("image"); 
+prevEntries = document.getElementById("entries")
+let entry = "";
 let count = 0;
 function increament() {
-  count = count + 1;
+  count += 1;
   countEl.innerText = count;
 }
 function decreament() {
   if (count == 0) {
     countEl.innerText = "No one is in the room";
   } else {
-    count = count - 1;
+    count -= 1;
     countEl.innerText = count;
   }
+}
+function save(){
+    entry =entry + "+" +  count;
+    prevEntries.innerText = "previous entries =" + entry;
 }

@@ -24,7 +24,7 @@ body {
 	max-width :500px;
     text-align: center;
 	margin : 2rem auto;
-    height: 75vh;
+    height: 80vh;
 	padding: 1rem;
 	border-radius: 1rem;
 	background-image :linear-gradient(rgb(14, 196, 252), pink);
@@ -42,10 +42,10 @@ h1 {
 }
 #count{
     margin-bottom: 5rem;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
-#increament {
+#increament,#decreament {
 	font-size: 18px;
 	display: inline-block;
 	width: 30%;
@@ -59,11 +59,33 @@ h1 {
 	text-align: center;
 	transition: all 250ms;
 }
-#decreament {
-    font-size: 18px;
-	display: inline-block;
+
+#increament:hover {
+	transform: translateY(3px);
+    box-shadow: 1px 2px 3px var(--input-border);
+}
+#increament:active{
+    transform: translateY(1px);
+}
+#save:hover {
+	transform: translateY(3px);
+    box-shadow: 1px 2px 3px var(--input-border);
+}
+#save:active{
+    transform: translateY(1px);
+}
+#decreament:hover {
+	transform: translateY(3px);
+    box-shadow: 1px 2px 3px var(--input-border);
+}
+#decreament:active{
+    transform: translateY(1px);
+}
+#save{
+	font-size: 18px;
+	display:block;
 	width: 30%;
-	margin:  auto;
+	margin: 1rem auto;
 	padding: 6px 15px;
 	border-radius: 5px;
 	color: var(--button-color);
@@ -73,19 +95,9 @@ h1 {
 	text-align: center;
 	transition: all 250ms;
 }
-#increament:hover {
-	transform: translateY(3px);
-    box-shadow: 1px 2px 3px var(--input-border);
-}
-#increament:active{
-    transform: translateY(1px);
-}
-#decreament:hover {
-	transform: translateY(3px);
-    box-shadow: 1px 2px 3px var(--input-border);
-}
-#decreament:active{
-    transform: translateY(1px);
+#entries{
+	margin-bottom: 8rem;
+    font-size: 1.5rem;
 }
 .footer{
 	margin : auto;
