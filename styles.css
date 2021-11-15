@@ -17,7 +17,7 @@ body {
 	color: var(--font-color);
 	background-size: cover;
 	background-image: url("Asset/counter.jpg");
-    background-size: cover;
+
 
 }
 .container {
@@ -100,7 +100,8 @@ h1 {
     font-size: 1.5rem;
 }
 .footer{
-	margin : auto;
+	margin : 10rem auto;
+	padding : 0.54rem;
 	max-width : 500px;
 	background-image :linear-gradient(rgb(14, 196, 252), pink);
 	text-align: center;

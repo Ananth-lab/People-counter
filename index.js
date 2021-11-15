@@ -15,6 +15,6 @@ function decreament() {
   }
 }
 function save(){
-    entry =entry + "+" +  count;
-    prevEntries.innerText = "previous entries =" + entry;
-}
+    entry =  entry +"-" + count  ;
+    prevEntries.innerText = "previous entries = 0" + entry ;
+} 
